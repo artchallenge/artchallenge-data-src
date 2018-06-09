@@ -1,3 +1,5 @@
-[
-    "Csontváry Kosztka Tivadar"
-]
+{
+	"includes": [
+		"Csontváry Kosztka Tivadar"
+	]
+}
