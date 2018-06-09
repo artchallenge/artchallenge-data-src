@@ -9,6 +9,7 @@
 		- A festmény alapvető adatjai: `metadata.json` (object)
 			- `date` (dátum)
 		- A festmény különbözö méretei: `versions > [méret].[fájl kiterjesztés]`
+			- `[méret]`: `[szélesség]x[magasság]` vagy `max`
 - Gyűjtemény: `collections > [gyűjtemény neve].json` (object)
 	- `includes` (festmény array)
 
