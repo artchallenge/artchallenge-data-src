@@ -1,0 +1,2 @@
+Csontváry magányos festő volt, akit magyar kortársai nem értettek meg, és csak halála után ismerték fel jelentőségét.
+Festészetét az expresszionizmushoz, illetve posztimpresszionizmushoz kapcsolják, de egyik, elhatárolható művészeti irányzathoz sem tartozott. Magát a „Napút festők” közé sorolta. Talán a legismertebb festménye a Magányos cédrus.
