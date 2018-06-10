@@ -5,7 +5,7 @@ const addIndex = path => {
 	fs.readdir(path, (err, files) => {
 		if(err && err.errno ===	 -4052) return;
 		if(!files){
-			console.error('undefined files in ' + path);
+			console.error('undefined files in ' + path, err);
 			return;
 		}
 		fs.writeFile(join(path, 'index.txt'), files.join('\n'), () => {
