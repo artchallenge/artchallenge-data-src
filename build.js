@@ -8,7 +8,7 @@ const addIndex = path => {
 			console.error('undefined files in ' + path, err);
 			return;
 		}
-		fs.writeFile(join(path, 'index.txt'), files.join('\n'), () => {
+		fs.writeFile(join(path, '.index'), files.filter(file => file !== '.index').join('\n'), () => {
 			for(const file of files){
 				addIndex(join(path, file));
 			}
