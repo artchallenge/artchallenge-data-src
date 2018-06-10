@@ -1,0 +1,16 @@
+{
+  "name": "artchallenge-data",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "node ./build.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/artchallenge/artchallenge-data.git"
+  },
+  "author": "Halasi Tamás",
+  "bugs": {
+    "url": "https://github.com/artchallenge/artchallenge-data/issues"
+  },
+  "homepage": "https://github.com/artchallenge/artchallenge-data#readme"
+}

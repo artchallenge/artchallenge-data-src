@@ -1,0 +1,3 @@
+bio.md
+metadata.json
+paintings
