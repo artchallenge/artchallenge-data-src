@@ -4,6 +4,7 @@ const {join} = require('path');
 const addIndex = path => {
 	fs.readdir(path, (err, files) => {
 		if(err && err.errno ===	 -4052) return;
+		if(!files) console.error('undefined files in ' + path);
 		fs.writeFile(join(path, 'index.txt'), files.join('\n'), () => {
 			for(const file of files){
 				addIndex(join(path, file));
