@@ -3,7 +3,7 @@ const {join} = require('path');
 
 const addIndex = path => {
 	fs.readdir(path, (err, files) => {
-		if(err && err.errno ===	 -4052) return;
+		if(err && err.code === 'ENOTDIR') return;
 		if(!files){
 			console.error('undefined files in ' + path, err);
 			return;
