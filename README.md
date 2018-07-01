@@ -1,15 +1,16 @@
 ## Felépítés
-- Festő könyvtára: `artists > [festő neve]`
+- Festő könyvtára: `artists > [festő neve]` (generálásához: add_artist.py)
 	- A festő alapvető adatai: `metadata.json` (object)
 		- `genres` (string array)
 		- `birth` (dátum)
 		- `death` (dátum)
 	- A festő rövid életrajza: `bio.md`
-	- A festő festményének könyvtára: `paintings > [festmény címe]`
+	- A festő festményének könyvtára: `paintings > [festmény címe]` (generálásához: add_painting.py)
 		- A festmény alapvető adatjai: `metadata.json` (object)
 			- `date` (dátum)
-		- A festmény különbözö méretei: `versions > [méret].[fájl kiterjesztés]`
-			- `[méret]`: `[szélesség]x[magasság]` vagy `max`
+		- A festmény különbözö méretei: `versions > [méret].[fájl kiterjesztés]` (generálásukhoz ajánlott csak a max.jpg alapján legenerálni a többit vagy egyből az add_painting.py, vagy későbbi korrigálás esetén a fix_painting_versions.py szkripttel)
+			- `[méret]`: `w[szélesség]` vagy `max`
+			- `[fájl kiterjesztés]`: jpg
 - Gyűjtemény: `collections > [gyűjtemény neve].json` (object)
 	- `includes` (festmény array)
 
@@ -33,9 +34,10 @@ A `string`, `number` és `array` adattípusokért látogasd meg a [JSON specifik
 	- kezdődhet `~`-vel: az integer csak körülbelüli érték
 
 ## Automatizált bővítés
-- Az `add-artist.py` fájl futattasával lehet egyszerűen hozzáadni művészt
-- Az `add-painting.py` fájl futattásával lehet egyszerűen hozzáadni festményt
-Mindkettő esetében az elkészült fájlokat még érdemes átnézni valamint bővíteni manuálisan (pl. `bio.md`).
+- Az `add_artist.py` fájl futattasával lehet egyszerűen hozzáadni művészt
+- Az `add_painting.py` fájl futattásával lehet egyszerűen hozzáadni festményt
+Mindkettő esetében az elkészült fájlokat még javasolt átnézni valamint bővíteni manuálisan (pl. `bio.md`).
+- Ha a paintingben lecseréled a képet, cseréld le csak a max.jpg-t, a többit pedig generáld le a `fix_painting_versions.py` fájl futtatásával
 
 ## Hogy kell futtatni a .py fájlokat és hogyan tudom a bővített adatbázist (ide) publikálni?
 ### Windows
@@ -45,5 +47,5 @@ Mindkettő esetében az elkészült fájlokat még érdemes átnézni valamint b
 4. Tanuld meg a git alapjait (add, commit, push és clone parancsok fognak kelleni)
 5. Egy általad preferált helyre helyezd el az adatbázis respositoryját (`git clone git@github.com:artchallenge/artchallenge-data.git`)
 6. Navigálj bele a respositoryba könyvtárába
-7. Itt már futtathatod a python fájlokat `py [fájlnév]` paranccsal (a `[fájlnév]` helyén a fájlnak a neve szerepeljen)
+7. Itt már futtathatod a python fájlokat `python3 [fájlnév]` paranccsal (a `[fájlnév]` helyén a fájlnak a neve szerepeljen)
 8. Amikor kész vagy, push-olhatod a respositoryt
