@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/artchallenge/artchallenge-data.svg?branch=master)](https://travis-ci.org/artchallenge/artchallenge-data)
+
 ## Felépítés
 - Festő könyvtára: `artists > [festő neve]` (generálásához: add_artist.py)
 	- A festő alapvető adatai: `metadata.json` (object)
