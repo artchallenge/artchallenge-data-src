@@ -1,5 +1,6 @@
 {
 	"genres": ["posztimpresszionizmus", "expresszionizmus"],
 	"birth": 1830,
-	"death": 1903
+	"death": 1903,
+	"nationality": "magyar"
 }
