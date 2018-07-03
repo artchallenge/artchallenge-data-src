@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/artchallenge/artchallenge-data.svg?branch=master)](https://travis-ci.org/artchallenge/artchallenge-data)
+[![Build Status](https://travis-ci.org/artchallenge/artchallenge-data-src.svg?branch=master)](https://travis-ci.org/artchallenge/artchallenge-data-src)
 
 ## Felépítés
 - Festő könyvtára: `artists > [festő neve]` (generálásához: add_artist.py)
