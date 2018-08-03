@@ -10,11 +10,10 @@
 	- A festő festményének könyvtára: `paintings > [festmény címe]` (generálásához: add_painting.py)
 		- A festmény alapvető adatjai: `metadata.json` (object)
 			- `date` (dátum)
-		- A festmény különbözö méretei: `versions > [méret].[fájl kiterjesztés]` (generálásukhoz ajánlott csak a max.jpg alapján legenerálni a többit vagy egyből az add_painting.py, vagy későbbi korrigálás esetén a fix_painting_versions.py szkripttel)
-			- `[méret]`: `w[szélesség]` vagy `max`
-			- `[fájl kiterjesztés]`: jpg
-- Gyűjtemény: `collections > [gyűjtemény neve].json` (object)
-	- `includes` (festmény array)
+		- A festmény képe: `image.jpg`
+- Gyűjtemények: `collections.json` (object array)
+	- `name` (string)
+	- `references` (festmény array)
 
 ## JSON adattípusok
 A `string`, `number` és `array` adattípusokért látogasd meg a [JSON specifikációt](https://json.org/).
