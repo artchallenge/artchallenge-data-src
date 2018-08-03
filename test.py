@@ -1,16 +1,7 @@
 import os
 import json
 from util import find, readFile, err_quit
-import argparse
 import re
-from functools import partial
-from PIL import Image
-
-
-parser = argparse.ArgumentParser(description='Validate the artchallenge data.')
-parser.add_argument('--fix', '-f', action='store_true')
-args = parser.parse_args()
-fix = args.fix
 
 
 def assertJson(text, _):
@@ -20,7 +11,7 @@ assertsByExt = {
 	'.json': assertJson
 }
 
-maxFileSize = 1000 * 100 # 100kB
+maxFileSize = 1000 * 1000 # 1MB
 
 
 def matchFilename(filename, expected):
@@ -77,11 +68,8 @@ def checkpath(path, structure):
 				checkpath(os.path.join(path, filenameMatches[expectedFile]), expectedFiles[expectedFile])
 	else:
 		if os.path.getsize(path) > maxFileSize:
-			if not fix:
-				err_quit('Ez a fájl túl sok helyet foglal! A maximális fájl méret 100kB!')
-			Image.
+			err_quit('Ez a fájl túl sok helyet foglal! A maximális fájl méret 1MB!')
 
-		assert os.path.getsize(path) <= maxFileSize, 
 		_, ext = os.path.splitext(path)
 		assertByExt = assertsByExt.get(ext)
 		if assertByExt != None:
