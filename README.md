@@ -44,4 +44,4 @@ Ezt letöltéskor automatikusan megcsinálja, ha bejelölöd a "Python hozzáad�
 Bár a GitHub webes felületén keresztül is lehet hozzájárulni a project-hez,
 a respository lekérése után lehet a megszokott környezetben dolgozni,
 valamint a szkripteket futtatni, ami nagy előny a webes felülettel szemben.
-A [letöltési utasítások itt](https://git-scm.com/downloads), [a használati utasítások pedig itt](https://git-scm.com/book/en/v2) találhatóak.
+A [letöltési utasítások itt](https://git-scm.com/downloads), [a használati utasítások pedig itt](https://git-scm.com/doc) találhatóak.
